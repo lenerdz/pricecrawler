@@ -22,7 +22,7 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // $nomes = getNomes();
 // var_dump($nomes);
 
-getEdicoes();
+salvarEdicoes();
 
 /*
 for ($i=0; $i < count($nomes[0]); $i++) { 
