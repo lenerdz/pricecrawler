@@ -22,6 +22,7 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // $nomes = getNomes();
 // var_dump($nomes);
 
+// salvarCartas('LEB');
 salvarEdicoes();
 
 /*
