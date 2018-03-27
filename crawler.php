@@ -23,7 +23,9 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // var_dump($nomes);
 
 // salvarCartas('LEB');
-salvarEdicoes();
+//salvarEdicoes();
+
+saveimg('https://cdn1.mtggoldfish.com/images/gf/Mercenary%2BKnight%2B%255BPOR%255D.jpg', './img');
 
 /*
 for ($i=0; $i < count($nomes[0]); $i++) { 
