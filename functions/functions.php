@@ -15,7 +15,16 @@ function in_array_r($needle, $haystack, $strict = false) {
 }
 
 function saveimg($img, $folder) {
-    $content = file_get_contents($img);
-    file_put_contents($folder . '/image.jpg', $content);
+    if ($img) {
+        $content = file_get_contents($img);
+        file_put_contents($folder . '/image.jpg', $content);
+    } else {
+        echo "O caminho da imagem não pode ser vazio";
+    }
+}
+
+function issaved($var, $table, $column) {
+    $bank = DBRead($table,null,$column);
+    return in_array_r($var, $bank);
 }
 ?>

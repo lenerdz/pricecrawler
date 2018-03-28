@@ -25,18 +25,15 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // salvarCartas('LEB');
 //salvarEdicoes();
 
-saveimg('https://cdn1.mtggoldfish.com/images/gf/Mercenary%2BKnight%2B%255BPOR%255D.jpg', './img');
+// $local = '';
+// saveimg($local, './img');
 
-/*
-for ($i=0; $i < count($nomes[0]); $i++) { 
-	salvarPrecos($nomes[2][$i],$nomes[1][$i],$edicao);
-}
-$target_url = "http://ligamagic.com.br/?view=cards/card&card=Terror&show=2&mesHistoricoInicio=2012-11&mesHistoricoFim=2017-11&campo=1";
-$html = new simple_html_dom();
-$html->load_file($target_url);
+// $target_url = "https://www.mtggoldfish.com/index/V17";
+// $html = new simple_html_dom();
+// $html->load_file($target_url);
 
-preg_match_all('(\[new Date\(([0-9, ]*)\)((, ?[0-9.]*|null)*)],?)', $html,$result);
+// preg_match_all('/data-full-image="(.*?)"(.*data-full-image1="(.*?)")*/', $html,$result);
 
-var_dump($result);
-*/
+// var_dump($result);
+
 ?>
