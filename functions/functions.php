@@ -6,18 +6,24 @@ include_once('crawler/salvarEdicoes.php');
 include_once('crawler/salvarCartas.php');
 
 function in_array_r($needle, $haystack, $strict = false) {
-    foreach ($haystack as $item) {
-        if (($strict ? $item === $needle : $item == $needle) || (is_array($item) && in_array_r($needle, $item, $strict))) {
-            return true;
+    if($haystack) {
+        foreach ($haystack as $item) {
+            if (($strict ? $item === $needle : $item == $needle) || (is_array($item) && in_array_r($needle, $item, $strict))) {
+                return true;
+            }
         }
     }
     return false;
 }
 
-function saveimg($img, $folder) {
+function saveimg($img, $folder, $nome, $edicao) {
     if ($img) {
         $content = file_get_contents($img);
-        file_put_contents($folder . '/image.jpg', $content);
+        $dir = $folder . "/{$edicao}/";
+        if (!file_exists($dir)) {
+            mkdir($dir, 0777, true);
+        }
+        file_put_contents($dir . "{$nome}.jpg", $content);
     } else {
         echo "O caminho da imagem não pode ser vazio";
     }

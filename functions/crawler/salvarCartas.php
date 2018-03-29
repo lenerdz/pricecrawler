@@ -8,6 +8,7 @@
         preg_match_all('/href=.(\/price\/.*paper).>(.*)<\/a>/', $html,$result);
 
         $insertinto = "INSERT INTO cartas (edicao, nome, link) VALUES ";
+        $initalQuery = "INSERT INTO cartas (edicao, nome, link) VALUES ";
 
         for ($i=0; $i < count($result[0]); $i++) { 
             $link = $result[1][$i];
@@ -20,6 +21,6 @@
                 echo "Carta: {$nome} - Links: {$link}<br>";
             }
         }
-        DBExecute($insertinto);
+        if($insertinto != $initalQuery) DBExecute($insertinto);
     }
 ?>

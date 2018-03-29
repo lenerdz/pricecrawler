@@ -16,12 +16,11 @@
             if(in_array_r($link, $currentBank)){
                 echo "Edição: {$nome} - Já existe no banco!<br>";
             } else {
-                if($i > 0 && $insertinto != $initalQuery) $insertinto = $insertinto.",";
+                if($i > 0) $insertinto = $insertinto.",";
                 $insertinto = $insertinto." ('$nome','$link')";
                 echo "Carta: {$nome} - Links: {$link}<br>";
             }
         }
-        echo($insertinto);
-        DBExecute($insertinto);
+        if($insertinto != $initalQuery) DBExecute($insertinto);
     }
 ?>

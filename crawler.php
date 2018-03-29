@@ -22,11 +22,11 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // $nomes = getNomes();
 // var_dump($nomes);
 
-// salvarCartas('LEB');
+//salvarCartas('LEB');
 //salvarEdicoes();
 
-// $local = '';
-// saveimg($local, './img');
+$local = 'https://cdn1.mtggoldfish.com/images/gf/Insectile%2BAberration%2B%255BV17%255D.jpg';
+saveimg($local, './img', 'aberracao', 'LEB');
 
 // $target_url = "https://www.mtggoldfish.com/index/V17";
 // $html = new simple_html_dom();
