@@ -14,11 +14,11 @@
             $link = $result[1][$i];
             $nome = $result[2][$i];
             if(in_array_r($link, $currentBank)){
-                echo "Edição: {$nome} - Já existe no banco!<br>";
+                //echo "Edição: {$nome} - Já existe no banco!<br>";
             } else {
                 if($i > 0) $insertinto = $insertinto.",";
                 $insertinto = $insertinto." ('$nome','$link')";
-                echo "Carta: {$nome} - Links: {$link}<br>";
+                //echo "Carta: {$nome} - Links: {$link}<br>";
             }
         }
         if($insertinto != $initalQuery) DBExecute($insertinto);
