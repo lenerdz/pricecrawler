@@ -4,6 +4,7 @@ include_once('crawler/getNomes.php');
 include_once('crawler/salvarPrecos.php');
 include_once('crawler/salvarEdicoes.php');
 include_once('crawler/salvarCartas.php');
+include_once('crawler/listaEdicoes.php');
 include_once('crawler/listaCartas.php');
 
 function in_array_r($needle, $haystack, $strict = false) {

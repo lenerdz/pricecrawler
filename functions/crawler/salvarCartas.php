@@ -9,17 +9,17 @@
 
         $insertinto = "INSERT INTO cartas (edicao, nome, link, tipo) VALUES ";
         $initalQuery = "INSERT INTO cartas (edicao, nome, link, tipo) VALUES ";
-        var_dump($result);
+        //var_dump($result);
 
         for ($i=0; $i < count($result[0]); $i++) { 
             $link = $result[1][$i];
             $nome = $result[2][$i];
             if(issaved($link, 'cartas', 'link')){
-                echo "Card: {$nome} - Já existe no banco!<br>";
+                //echo "Card: {$nome} - Já existe no banco!<br>";
             } else {
                 if($i > 0) $insertinto = $insertinto.",";
                 $insertinto = $insertinto." ('$edicao','$nome','$link', '$tipo')";
-                echo "Carta: {$nome} - Links: {$link}<br>";
+                //echo "Carta: {$nome} - Links: {$link}<br>";
             }
         }
         if($insertinto != $initalQuery) DBExecute($insertinto);
