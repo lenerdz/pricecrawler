@@ -16,8 +16,9 @@ function in_array_r($needle, $haystack, $strict = false) {
     return false;
 }
 
-function saveimg($img, $folder, $nome, $edicao) {
+function saveimg($img, $nome, $edicao) {
     if ($img) {
+        $folder = 'img';
         $content = file_get_contents($img);
         $dir = $folder . "/{$edicao}/";
         echo $dir;
