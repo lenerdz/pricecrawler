@@ -1,6 +1,4 @@
 <?php
-include_once('crawler/getEdicoes.php');
-include_once('crawler/getNomes.php');
 include_once('crawler/salvarPrecos.php');
 include_once('crawler/salvarEdicoes.php');
 include_once('crawler/salvarCartas.php');
@@ -22,8 +20,9 @@ function saveimg($img, $folder, $nome, $edicao) {
     if ($img) {
         $content = file_get_contents($img);
         $dir = $folder . "/{$edicao}/";
+        echo $dir;
         if (!file_exists($dir)) {
-            mkdir($dir, 0777, true);
+            mkdir($dir);
         }
         file_put_contents($dir . "{$nome}.jpg", $content);
     } else {

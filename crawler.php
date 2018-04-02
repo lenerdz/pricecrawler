@@ -21,8 +21,18 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 
 // $nomes = getNomes();
 // var_dump($nomes);
+$target_url = "https://www.mtggoldfish.com/prices/select";
+$html = new simple_html_dom();
+$html->load_file($target_url);
 
-salvarCartas('MED');
+preg_match_all('/sprite-set_symbols_(.*?)" src="(.*?)"/', $html,$icones);
+
+var_dump($icones);
+
+for ($i=0; $i < count($icones[0]); $i++) { 
+    saveimg('http:'.$icones[2][$i], 'img', $icones[1][$i], 'seticons');
+}
+
 //salvarEdicoes();
 
 // $local = 'https://cdn1.mtggoldfish.com/images/gf/Insectile%2BAberration%2B%255BV17%255D.jpg';

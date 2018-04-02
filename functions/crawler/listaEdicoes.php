@@ -24,8 +24,8 @@ function listaEdicoes() {
             echo "<th scope='row'>".($i+1)."</td>";
             echo "<td><a href='lista.php?set=$code'>".$edicoes[$i]['nome']."</a></td>";
             echo "<td>".$code."</td>";
-            echo "<td><a href='index.php?set=$code&tipo=paper' class='badge badge-primary'>Atualizar</a> ".count($countp)."</td>";
-            echo "<td><a href='index.php?set=$code&tipo=online' class='badge badge-primary'>Atualizar</a> ".count($counto)."</td>";
+            echo "<td><a href='index.php?set=$code&tipo=paper' class='badge badge-primary'>Atualizar</a> ".($countp ? count($countp) : 'Nenhuma entrada')."</td>";
+            echo "<td><a href='index.php?set=$code&tipo=online' class='badge badge-primary'>Atualizar</a> ".($counto ? count($counto) : 'Nenhuma entrada')."</td>";
             echo "</tr>";
         }
     ?>
