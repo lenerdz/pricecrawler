@@ -1,0 +1,2 @@
+> Get foil prices
+> Correct problemas with cards with double slash (Driven // Despair)
