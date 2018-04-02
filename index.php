@@ -8,7 +8,6 @@
         salvarCartas($_GET['set'], $_GET['tipo']);
     }
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>

@@ -21,7 +21,7 @@ function saveimg($img, $nome, $edicao) {
         $folder = 'img';
         $content = file_get_contents($img);
         $dir = $folder . "/{$edicao}/";
-        echo $dir;
+        //echo $dir;
         if (!file_exists($dir)) {
             mkdir($dir);
         }

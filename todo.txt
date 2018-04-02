@@ -1,2 +1,10 @@
+    FUNCIONALITIES
 > Get foil prices
-> Correct problemas with cards with double slash (Driven // Despair)
+> Get events (Releases, Pro Tours, ETC)
+
+    BUGFIX
+> Correct problems with cards with double slash (Driven // Despair)
+
+    BANK
+> Apply views, Routines & triggers to the bank
+> Create bank creator functions
