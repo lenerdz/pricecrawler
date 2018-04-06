@@ -1,6 +1,7 @@
     FUNCIONALITIES
 > Get foil prices
 > Get events (Releases, Pro Tours, ETC)
+> Construct price graph
 
     BUGFIX
 > Correct problems with cards with double slash (Driven // Despair)

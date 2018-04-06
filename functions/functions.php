@@ -1,9 +1,12 @@
 <?php
+include_once('simple_html_dom.php');
+include_once('functions/banco.php');
 include_once('crawler/salvarPrecos.php');
 include_once('crawler/salvarEdicoes.php');
 include_once('crawler/salvarCartas.php');
 include_once('crawler/listaEdicoes.php');
 include_once('crawler/listaCartas.php');
+include_once('crawler/listaPrecos.php');
 
 function in_array_r($needle, $haystack, $strict = false) {
     if($haystack) {
