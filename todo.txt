@@ -2,6 +2,7 @@
 > Get foil prices
 > Get events (Releases, Pro Tours, ETC)
 > Construct price graph
+> Load image only on hover
 
     BUGFIX
 > Correct problems with cards with double slash (Driven // Despair)
