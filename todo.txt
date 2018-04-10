@@ -9,3 +9,9 @@
     BANK
 > Apply views, Routines & triggers to the bank
 > Create bank creator functions
+
+    BENCHMARKING
+> http://cryfall.com
+> http://mtgjson.com
+> http://magicthegathering.io
+> http://gatherer.wizards.com
