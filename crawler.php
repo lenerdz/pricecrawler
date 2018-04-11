@@ -22,7 +22,7 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // $nomes = getNomes();
 // var_dump($nomes);
 
-salvarCartas('HOU', 'paper');
+//salvarCartas('HOU', 'paper');
 
 //salvarEdicoes();
 
@@ -36,5 +36,7 @@ salvarCartas('HOU', 'paper');
 // preg_match_all('/data-full-image="(.*?)"(.*data-full-image1="(.*?)")*/', $html,$result);
 
 // var_dump($result);
+
+criaBancos();
 
 ?>

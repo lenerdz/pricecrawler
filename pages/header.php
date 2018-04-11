@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="/preco">MTGCrawler</a>
         <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#nav-header" aria-controls="nav-header"
             aria-expanded="false" aria-label="Mudar navegação">
