@@ -37,6 +37,10 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 
 // var_dump($result);
 
-criaBancos();
+//criaBancos();
+$url = "https://api.scryfall.com/sets/";
+$json = file_get_contents($url);
+$obj = json_decode($json, TRUE);
+var_dump($obj);
 
 ?>

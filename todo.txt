@@ -1,3 +1,10 @@
+---- BACKLOG ----
+> Create DB for Scryfall data
+> Create functions to import it's data
+
+
+
+
     FUNCIONALITIES
 > Get foil prices
 > Get events (Releases, Pro Tours, ETC)
@@ -12,7 +19,8 @@
 > Create bank creator functions
 
     BENCHMARKING
-> http://cryfall.com
+> http://scryfall.com
 > http://mtgjson.com
 > http://magicthegathering.io
 > http://gatherer.wizards.com
+> http://media.wizards.com/2018/downloads/MagicCompRules%2020180119.pdf
