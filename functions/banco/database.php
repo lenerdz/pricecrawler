@@ -35,7 +35,7 @@
 		$data = DBProtect($data);
 
 		$fields = implode(', ', array_keys($data));
-		$values = "'".implode(', ', $data)."'";
+		$values = "'".implode("', '", $data)."'";
 
 		$query = "INSERT INTO {$table} ( {$fields} ) VALUES ( {$values} )";
 
