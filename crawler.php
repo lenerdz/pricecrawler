@@ -38,10 +38,7 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // var_dump($result);
 
 //criaBancos();
-$url = "https://api.scryfall.com/sets/";
-$json = file_get_contents($url);
-$obj = json_decode($json, TRUE);
-DBExecute(DBCreate('tb_setlist', $obj['data'][1]));
+setSave();
 // $insertinto = "INSERT INTO `tb_setlist` (`code`, `mtgo_code`, `name`, `set_type`, `released_at`, `block_code`, `block`, `parent_set_code`, `card_count`, `digital`, `foil_only`, `icon_svg_uri`, `search_uri`, `uri`, `scryfall_uri`) VALUES ";
 
 // for ($i=0; $i < count($obj['data']); $i++) { 
