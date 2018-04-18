@@ -38,7 +38,7 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // var_dump($result);
 
 //criaBancos();
-setSave();
+cardSave();
 // $insertinto = "INSERT INTO `tb_setlist` (`code`, `mtgo_code`, `name`, `set_type`, `released_at`, `block_code`, `block`, `parent_set_code`, `card_count`, `digital`, `foil_only`, `icon_svg_uri`, `search_uri`, `uri`, `scryfall_uri`) VALUES ";
 
 // for ($i=0; $i < count($obj['data']); $i++) { 
