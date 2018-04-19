@@ -1,7 +1,7 @@
 ---- BACKLOG ----
 > Create DB for Scryfall data
 > Create functions to import it's data
-
+> Create db generator
 
 
 
