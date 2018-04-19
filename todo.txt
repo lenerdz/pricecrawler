@@ -13,6 +13,7 @@
 
     BUGFIX
 > Correct problems with cards with double slash (Driven // Despair)
+> Correct error on setSave and remove @
 
     BANK
 > Apply views, Routines & triggers to the bank

@@ -7,6 +7,8 @@ include_once('crawler/salvarCartas.php');
 include_once('crawler/listaEdicoes.php');
 include_once('crawler/listaCartas.php');
 include_once('crawler/listaPrecos.php');
+include_once('crawler/scryfall/setSave.php');
+include_once('crawler/scryfall/cardSave.php');
 
 function in_array_r($needle, $haystack, $strict = false) {
     if($haystack) {
