@@ -38,7 +38,7 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // var_dump($result);
 
 //criaBancos();
-cardSave();
+
 // $insertinto = "INSERT INTO `tb_setlist` (`code`, `mtgo_code`, `name`, `set_type`, `released_at`, `block_code`, `block`, `parent_set_code`, `card_count`, `digital`, `foil_only`, `icon_svg_uri`, `search_uri`, `uri`, `scryfall_uri`) VALUES ";
 
 // for ($i=0; $i < count($obj['data']); $i++) { 
@@ -50,32 +50,5 @@ cardSave();
 // }
 // //DBExecute($insertinto);
 // echo ($insertinto);
-
+rulingSave(1000);
 ?>
-
-
-<!-- function insert($database, $table, $data_array) { 
-    // Connect to MySQL server and select database 
-    $mysql_connect = connect_to_database(); 
-    mysql_select_db ($database, $mysql_connect); 
-
-    // Create column and data values for SQL command 
-    foreach ($data_array as $key => $value) { 
-        $tmp_col[] = $key; 
-        $tmp_dat[] = "'".mysql_real_escape_string($value)."'"; // <-- escape against SQL injections
-    } 
-    $columns = join(',', $tmp_col); 
-    $data = join(',', $tmp_dat);
-
-    // Create and execute SQL command 
-    $sql = 'INSERT INTO '.$table.'('.$columns.')VALUES('. $data.')'; 
-    $result = mysql_query($sql, $mysql_connect); 
-
-    // Report SQL error, if one occured, otherwise return result 
-    if(!$result) { 
-        echo 'MySQL Update Error: '.mysql_error($mysql_connect); 
-        $result = ''; 
-    } else { 
-        return $result; 
-    } 
-} -->
