@@ -50,5 +50,5 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // }
 // //DBExecute($insertinto);
 // echo ($insertinto);
-rulingSave();
+rulingSave(1000);
 ?>
