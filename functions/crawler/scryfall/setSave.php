@@ -1,5 +1,4 @@
 <?php
-
     function setSave() {
         $url = "https://api.scryfall.com/sets/";
         $json = file_get_contents($url);
