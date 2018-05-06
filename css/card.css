@@ -1,0 +1,62 @@
+body,
+html {
+    height: 100%;
+}
+
+.container {
+    background-color: gray;
+    height: 200vh;
+}
+
+#card {
+    height: 500px;
+    background-color: black;
+}
+
+#info1 {
+    height: 500px;
+    background-color: red;
+}
+
+#info2 {
+    height: 500px;
+    background-color: blue;
+}
+
+#info3 {
+    height: 500px;
+    background-color: pink;
+}
+
+.pink {
+    background-color: teal;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    #card {
+        max-width: 400px;
+        margin: 20px auto;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    #card {
+        height: 500px;
+    }
+}
