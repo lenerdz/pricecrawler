@@ -62,39 +62,36 @@
 
     <div class="container">
         <div class="row">
-        <table class="table table-striped table-hover table-sm">
-                    <thead>
-                        <tr>
+            <table class="table table-striped table-hover table-sm">
+                <thead>
+                    <tr>
                         <th scope="col">#</th>
                         <th scope="col">Icone</th>
                         <th scope="col">Nome</th>
                         <th scope="col">Cartas</th>
                         <th scope="col">Data</th>
                         <th scope="col">Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            <?php
-            $url = "https://api.scryfall.com/sets/";
-                    $json = file_get_contents($url);
-                    $obj = json_decode($json, TRUE);
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                $url = "https://api.scryfall.com/sets/";
+                        $json = file_get_contents($url);
+                        $obj = json_decode($json, TRUE);
 
-                    for ($i=0; $i < count($obj['data']); $i++) { 
-            ?>
-                
-                        <tr>
-                            <th scope="row"><?=$i?></th>
-                            <td><img src="<?=$obj['data'][$i]['icon_svg_uri']?>" alt="" width=30 height=30></td>
-                            <td><?=$obj['data'][$i]['name']?></td>
-                            <td><?=$obj['data'][$i]['card_count']?></td>
-                            <td><?=@$obj['data'][$i]['released_at']?></td>
-                            <td><a href="<?=$obj['data'][$i]['scryfall_uri']?>" class="btn btn-primary btn-sm">Ver Cards -></a></td>
-                        </tr>
-
-            <?php
-                    }
-            ?>
-            
+                        for ($i=0; $i < count($obj['data']); $i++) { 
+                ?>
+                    <tr>
+                        <th scope="row"><?=$i?></th>
+                        <td><img src="<?=$obj['data'][$i]['icon_svg_uri']?>" alt="" width=30 height=30></td>
+                        <td><?=$obj['data'][$i]['name']?></td>
+                        <td><?=$obj['data'][$i]['card_count']?></td>
+                        <td><?=@$obj['data'][$i]['released_at']?></td>
+                        <td><a href="<?=$obj['data'][$i]['scryfall_uri']?>" class="btn btn-primary btn-sm">Ver Cards -></a></td>
+                    </tr>
+                <?php
+                        }
+                ?>
                 </tbody>
             </table>    
         </div><!-- /.row -->
