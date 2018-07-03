@@ -1,6 +1,6 @@
 <?php
-include_once('functions/simple_html_dom.php');
-include_once('banco.php');
+include_once('simple_html_dom.php');
+include_once('functions/banco.php');
 include_once('crawler/salvarPrecos.php');
 include_once('crawler/salvarEdicoes.php');
 include_once('crawler/salvarCartas.php');

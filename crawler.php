@@ -1,4 +1,6 @@
 <?php
+include_once('simple_html_dom.php');
+include_once('functions/banco.php');
 include_once('functions/functions.php');
 
 $regexEdicoes = "<a href='\/index\/([A-z,0-9]*)'.*\n<img.*>\n(.*)"; //mudar a captura pra antes do index
@@ -48,4 +50,5 @@ ini_set('max_execution_time', 3000); //300 seconds = 5 minutes
 // }
 // //DBExecute($insertinto);
 // echo ($insertinto);
+rulingSave(1000);
 ?>

@@ -1,7 +1,7 @@
 ---- BACKLOG ----
 > Create DB for Scryfall data
 > Create functions to import it's data
-> Create db generator
+
 
 
 
@@ -29,10 +29,3 @@
 > https://deckstats.net
 > http://mtgtop8.com
 > https://decks.tcgplayer.com
-
-https://tappedout.net/mtg-deck-builder/
-https://deckbox.org
-https://www.cardsphere.com
-https://manastack.com
-https://untap.in
-http://whatsinstandard.com
